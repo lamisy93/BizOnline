@@ -1,0 +1,118 @@
+<%- include partial/head.ejs %>
+
+<section id="home">
+  <h1 id="biz">bizOnline</h1>
+  <img id="detour" src="/images/detour.png" alt="">
+
+  <img id="inv" src="/images/inv.png" alt="">
+
+  <h1 class="title">Gestion de stock</h1>
+
+<div id="gauche">
+
+  <div id="contourg">
+
+  <h2>Ajouter un produit au stock</h2>
+
+  <form id="formproduits" action="/produit" method="post">
+    <h3 class="form">Nom:</h3>
+    <input type="text" id="nomproduit" placeholder="Nom du produit">
+    <h3 class="form">Marque:</h3>   
+    <input type="text" id="marqueproduit" placeholder="Marque du produit">
+    <h3 class="form">Prix:</h3>  
+    <input type="number" id="prixproduit" placeholder="Prix du produit"> 
+    <h3 class="form">Description:</h3>
+    <textarea name="description" id="description" cols="30" rows="10" placeholder="Description du produit"></textarea>
+  </form>
+  <button id="btnproduit">Ajouter</button>
+
+</div>
+
+<img id="gif" src="/images/pbox.gif" alt="">
+
+</div>
+  
+  <br>
+
+<div id="droite">
+
+  <div id="contourd">
+
+    <h2>Ajouter une marque au stock</h2>
+
+  <form id="marque" action="/marque" method="post">
+    <h3 class="form">Nom:</h3>
+    <input type="text" id="nommarque" placeholder="Nom de la marque">   
+  </form>
+  <button id="btnmarque">Ajouter</button>
+
+</div>
+
+</div>
+
+<div id="table1">
+
+<table id="produits">
+
+    <tbody id="tbodyproduits">
+     
+    <tr>
+    <th colspan="100">Produits</th>
+    </tr>
+    
+    <tr>
+    <th>
+      Nom
+    </th>
+    <th>
+      Marque
+      </th>
+    <th>
+      Description
+    </th>
+    <th>
+      Prix
+    </th>
+    <th>
+      DEL
+    </th>
+    <th>
+      Edit
+    </th>
+    </tr>
+
+  </tbody>
+
+  </table>
+
+</div>
+
+<div id="table2">
+
+  <table id="formmarques">
+
+    <tbody id="tbodymarques">
+      <tr>
+      <th id="thmarques" colspan="100">Marques</th>
+     </tr>
+      <tr>
+          <th>
+            Nom
+          </th>
+          <th>
+            DEL
+          </th>
+          <th>
+            Edit
+          </th>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+
+</section>
+
+
+
+<%- include partial/footer.ejs %>
