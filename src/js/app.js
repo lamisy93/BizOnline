@@ -103,11 +103,11 @@ console.log("hello app JS front side");
             colonne4.contentEditable = "true";
             var colonne5 = ligne1.insertCell(4);
             colonne5.innerHTML = "❌";
-            var img = document.createElement('img');
-            img.src = "/images/icon.png";
-            // x.appendChild(img);
-            var colonne6 = ligne1.insertCell(5);
-            colonne6.innerHTML = img;
+            // var img = document.createElement('img');
+            // img.src = "/images/icon.png";
+            // // x.appendChild(img);
+            // var colonne6 = ligne1.insertCell(5);
+            // colonne6.appendChild(img);
         });
         
         // ActiveSuppr();
